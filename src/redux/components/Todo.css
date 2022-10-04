@@ -1,0 +1,22 @@
+.box{
+    margin-top: 200px;
+    width : 600px;
+    margin-left: 600px;
+}
+
+#button-addon1{
+    margin-left: 30px;
+}
+
+html{
+    background-color: rgb(79, 196, 226);
+  }
+  
+  .container-fluid{
+    background-color:rgb(79, 196, 226);
+  }
+
+#names{
+    padding-left: 0px;
+}
+
