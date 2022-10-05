@@ -33,15 +33,24 @@ const Todo = () => {
                       return (
                         <div className="input-group mb-3" key={comp.id}>
                           <h5>{comp.data}</h5>
+                          
                           <button className="btn btn-danger" type="button" id="button-addon1" title="Delete" onClick={() => dispatch(deleteTodo(comp.id))}>
-                            <i class="bi bi-trash"></i>
+                            <i className="bi bi-trash"></i>
                           </button>
+                                                   
                         </div>
                         );
                       })}
                   </ul>
-                </div>
-                <button className = "btn btn-danger" id="btn2" type="button" title="Removeall" onClick={()=>dispatch(removeTodo())}>Clear All</button>
+                  <div className="input-group mb-9">
+                    
+                    <button className = "btn btn-danger" id="btn2" type="button" title="Removeall" onClick={()=>dispatch(removeTodo())}>Clear All</button>
+                    <div className="txt-right">
+                      <h5>You have {list.length} pending tasks</h5>
+                    </div>                    
+                  </div>                   
+                    
+                </div>                                                    
               </div>
             </div>
           </div>
